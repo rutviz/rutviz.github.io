@@ -22,6 +22,9 @@ main {
 	color: #4CAF50;
 	border-radius: 5px solid black; 
 } 
+.card.medium .card-image{
+	max-height:55%;
+}
 
 nav .brand-logo {
 	padding-left: 15px;
@@ -44,11 +47,25 @@ nav .brand-logo {
 }
 
 .card:hover {
-	box-shadow: 2rem 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
+	box-shadow: 4rem 4rem 5rem -2rem rgba(0, 0, 0, 0.4);
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05);
 }
-
+.thumbnail{
+	width:100%;
+	height:50%;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.thumbnail:hover{
+	-webkit-transform:scale(1.08);
+	transform:scale(1.08);
+}
 .parallax-container {
-	height: 750px;
+	height: 350px;
 	
     background-position: bottom;
     background-repeat: no-repeat;
@@ -60,4 +77,12 @@ nav .brand-logo {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
+}
+.card{
+	-webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+p .article{
+	height:80%;
 }
