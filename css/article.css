@@ -1,0 +1,180 @@
+
+
+body{
+  width: 100%;
+  display: inline-block;
+}
+
+pre {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px;
+    text-align: justify;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.pattern {
+  min-height:50px;
+}
+
+#header {
+	font-size: 150%;
+    width: 90%;
+    font-weight: 800;
+    margin-left: 6%;
+}
+
+#header1 {
+	font-size: 230%;
+    width: 90%;
+    font-weight: 700;
+    margin-left: 6%;
+}
+
+#zig-zag1 {
+background: 
+linear-gradient(140deg, #EDD382 25%, transparent 25%) -74px 0,
+linear-gradient(220deg, #EDD382 25%, transparent 25%) -74px 0;
+background-size: 50px 50px;
+background-color: #ecf0f1;
+}
+
+#zig-zag2 {
+background: 
+linear-gradient(45deg, #EDD382 25%, transparent 25%) -74px 0,
+linear-gradient(315deg, #EDD382 25%, transparent 25%) -74px 0;
+background-size: 50px 50px;
+background-color: #ecf0f1;
+}
+
+a {
+  color: #0F5257;
+}
+
+i{
+  font-size: 40px;
+}
+
+b{
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.c-posts {
+  display: block;
+  flex-wrap: wrap;
+  align-items: top;
+  padding: 5%;
+}
+.c-posts__item {
+  flex-grow: 1;
+  padding-bottom: 2em;
+}
+.c-posts__item:first-child {
+  flex-grow: 2;
+}
+
+@media all and (min-width: 600px) {
+  .c-posts__item {
+    flex-basis: 50%;
+    padding-right: 5%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 100%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .c-posts__item {
+    flex-basis: 33%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 66%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .c-posts__item {
+    flex-basis: 25%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 50%;
+  }
+}
+
+/* Other Non-Flexbox Related Styles */
+.c-header {
+  background: #EDD382;
+  text-align: center;
+  margin-bottom: -20px;
+  height: 200px;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.c-footer{
+  background: #EDD382;
+  text-align: center;
+  margin-bottom: -20px;
+  height: 120px;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.c-header h1, .c-header h2, .c-header p,
+.c-footer h1,
+.c-footer h2,
+.c-footer p {
+  max-width: 40em;
+  margin: 0 auto;
+}
+.c-header h1:not(:last-child), .c-header h2:not(:last-child), .c-header p:not(:last-child),
+.c-footer h1:not(:last-child),
+.c-footer h2:not(:last-child),
+.c-footer p:not(:last-child) {
+  margin-bottom: 1em;
+}
+.c-header h1,
+.c-footer h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.c-header a,
+.c-footer a {
+  color: #000;
+}
+
+.c-footer p {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', Times, serif;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(130% + 1vw);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>MagArete: An E-Magazine</title>
+    <meta charset="UTF-8">
+      <!--Import Icons & Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!--Import css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css"/>
+      <link rel="stylesheet" href="css/article.css"/>
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <!-- pre loader -->
+      <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
+		<script src="js/modernizr.custom.js"></script>
+	  
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(){
+      	$(".button-collapse").sideNav();
+      	$(".modal-trigger").leanModal();
+      });
+
+      function shut(){
+          $('#modal1').closeModal();
+      }
+
+      </script>
+	  
+	  <!-- For Share -->
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/share.css">
+    </head>
+
+    <body> 
+  
+  <!-- Navigation Bar -->
+  <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper yellow darken-3">
+          <a href="index.html" class="brand-logo">MagArete</a>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" style="margin-left: 20%;">menu</i></a>
+          <a href="#modal1" class="right hide-on-large-only modal-trigger"><i class="material-icons" style="margin-left: -30%;">share</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Technical</a></li>
+            <li><a href="non-tech.html">Non-Technical</a></li>
+        <li><a href="#1">PU Happenings</a></li>
+            <li><a href="#1">About</a></li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <ul id="slide-out" class="side-nav left-align">
+      <li><div class="userView">
+        <img class="background" src="images/2.jpg">
+            <a href="#!user"><img class="circle" src="images/Harshit.jpg"></a>
+            <a href="#!name"><span class="white-text name">Harshit Kumar Singh</span></a>
+            <a href="#!email"><span class="white-text email">harshitks2203@gmail.com</span></a>
+          </div>
+    </li>
+  
+      <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
+    <li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+    <li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
+  </ul>
+<!-- Header -->
+  <header class="c-header">
+    <div id="header" class="hide-on-large-only">Five Instagram Marketing Tools for Small Business</div>
+    <div id="header1" class="hide-on-med-and-down">Five Instagram Marketing Tools for Small Business</div>
+
+      <!-- Share Button -->
+    <div class="social-buttons hide-on-med-and-down">
+      <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://plus.google.com/share?url=https://MagArete.in" target="_blank" class="social-button google"><i class="fa fa-google"></i></a>
+    
+    </div>
+
+    <!-- For Mobile -->
+		<div id="modal1" class="modal bottom-sheet">
+			<div class="modal-content">
+      <p>Share with</p>
+				<div class="collection">
+					<a href="whatsapp://send?text=Hey checkout my article at <a href="www.MagArete.in/article"" class="collection-item" data-action="share/whatsapp/share" style="color:#4dc247;" onclick="shut();"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
+					
+          <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="collection-item " style="color:#3b5998" onclick="shut();"><i class="fa fa-facebook"></i> Facebook</a>
+					
+          <a href="https://plus.google.com/share?url=https://MagArete.com" target="_blank" class="collection-item "style="color:#d34836" onclick="shut();"><i class="fa fa-google"></i> G-plus</a>
+					
+          <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="collection-item " style="color:#4099ff"  onclick="shut();"><i class="fa fa-twitter"></i> Twitter</a>	
+				</div>
+				
+			</div>
+		</div>
+
+</header>
+
+
+<div id="zig-zag1" class="pattern">
+</div>
+
+
+<section class="c-posts">
+  <article class="c-posts__item">
+  
+    <pre><i>Y</i>ou all might be having an Instagram account where your share your photos with your friends, but have you ever tried to market your business through Instagram? If no, then start using it now and be a part of the new marketing trend.
+
+<b> Why Instagram?</b>
+Instagram is a fast growing photo and video sharing platform with millions of users exchanging millions of photographs daily. Born in 2010, Instagram has turned from a social photos sharing app into a leading marketing app. Since past years marketing on social media is growing at a faster pace and with the launch of Instagram it has entered into a new phase of visual marketing. It is very convenient platform for small businesses to reach a huge crowd. Today all leading brands are using Instagram to attract customers and market their products. Let’s see some of the tools that will help you market yourself or your brand on this popular platform.
+
+<b>1. PhotoRepost:</b> 
+In any social marketing community it is essential to indulge customers in some marketing activities because promotion done by the customer or user is most effective method of marketing.
+PhotoRepost is a mobile app which allows you to paste the original photo description from a customers’ account and include the name of the original poster directly on your image, providing a great platform for brands to show-cast their user-generated content (UGC) and give praise to their customers. In this way you could indulge customers in marketing activities and gain their confidence by giving them credits for their creativity.
+
+<b>2. TAGstagram:</b> 
+Hashtags lead to better branding and exposure for your posts! To increase the reach of your post, you must use the popular tags efficiently with your post.  
+TAGstagram helps you organize your Tags strategically. It has a collection of the best performing hashtags for you to use at the most opportune times, which you can simply copy and paste with your Instagram post. It is very easy and simple to use, and is highly effective in reaching the crowd.
+ 
+<b>3. Flipagram: </b> 
+Sliding through each photograph manually- isn’t it boring? How about collecting all the photos together to making a slideshow out of it? 
+Flipagram allows you to do the same. It creates “photo video stories”- a series of photos put together to create a quick slideshow video for Instagram.
+This type of Instagram post is a quick and easy way for followers to browse through your products quickly, as the photos are seen for about a second before it flashes to the next. This is useful for, Photographers- to compile photos from your fall wedding photography last year to promote for next fall, Bars/Restaurants- to individually photograph each drink and dish for the night.
+
+<b>4. Followgram:  </b>
+Giving the best content for marketing is important, but the most important feature is giving the appropriate and required content. Followgram provides tons of free stats about who liked and commented on your content which will help you know about the choice and preferences of your followers. It is the ultimate in Instagram analytics and a must-have app for marketing on Instagram. It also offers special tools that allow you to run contests and get accurate analytics directly from the users. Multi-national brands like Ford, National Geographic, Nike, Armani, and others are now using Followgram to keep a track of their content.
+
+<b>5. ScheduGram:  </b>
+Are you facing troubles managing multiple Instagram accounts? Wanna schedule your posts in a proper manner for each of them?
+ScheduGram helps manage multiple accounts. It allows multiple users to log into your ScheduGram account, schedule posts for your accounts, and see who has scheduled what. It provides basic photo-editing features such as cropping, adding filters, text, and rotating images. An additional feature is that it provides direct integration with Canva to design images.
+
+
+Handling these Instagram tools is not a rocket science. Available either for free or at minimal affordable charges these tools could be used by any small business to do maximum marketing at minimal expense.  
+So what do you think? Wanna join the trend and use these amazing Instagram tools to market your brand and reach the crowd?</pre>
+  </article>
+</section>
+
+<div id="zig-zag2" class="pattern">
+</div>
+<div class="c-footer">
+  <p>Article given by <b>Apurva Jain</b></p>
+</div>
+
+
+  <!-- Footer -->
+    <footer class="page-footer yellow darken-3">
+          <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Parul University</h5>
+                    <p class="grey-text text-lighten-4">P.O.Limda, Ta.Waghodia - 391760 
+                    <br>Dist. Vadodara, Gujarat (India)</p>
+                <br>
+                    <h5 class="white-text">Contact us</h5>
+                  <ul class="ul1" style=" text-align: left; margin-top: 0px; color: #fff; font-size: 16px;">
+                    <li><b>Phone :</b> +91-2668-260312 <br> (202)-(300)-(307)</li>
+              <li><b>Fax :</b> +91-2668-260201</li>
+              <li><b>Email :</b> magarete.cse@gmail.com</li>
+            </ul>
+                
+                </div>
+                  
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul class="footerul">
+                      <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li> 
+                      <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i> Gmail</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+         
+          <div class="footer-copyright yellow darken-4">
+              <div class="container">
+                &copy; 2016 Copyright MagArete
+                <a class="white-text text-white right" href="#!">Designed and Developed by Parul University</a>
+              </div>
+          </div>
+        </footer>
+    </body>
+  </html>
+
+
+    

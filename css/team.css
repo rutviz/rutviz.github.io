@@ -1,0 +1,30 @@
+body {
+  background:#fff;
+}
+
+.brd{
+	border-radius:10px 10px 0 0;
+	height:300px;
+	transition: height 2s;
+}
+.curve{
+	height:300px;
+	background-position:center;
+	background-repeat:no-repeat;
+	left:-10px;
+    border-bottom: 50px solid #fff;
+    border-left: 300px solid transparent;
+    border-right: 0px solid transparent;
+	transition: height 2s;	
+}
+
+.title{
+	text-align:center;
+	padding-top:20px;
+	font-size:30px;
+}
+.info{
+	display:none;
+	height:0px;
+	transition: height 2s;
+}
