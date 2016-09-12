@@ -1,0 +1,140 @@
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Fugaz+One';
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	  background-color: #F2F2F2;
+	  color: #000;
+}
+
+h2 {
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: 1.78rem 0 1.424rem 0;
+}
+
+.card-image {
+    border-radius: 50%;
+}
+
+.card.horizontal .card-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: auto;
+    height: 200px;
+    margin-left: 15%;
+  }
+
+  .card.horizontal .card-stacked .card-content {
+      margin-top: 7%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.card .card-action {
+    margin-left: 10%;
+}
+
+/*********** Heading Css ***********/
+
+
+#title {
+  background:  #F2F2F2;
+  font-family: 'Fugaz One', cursive;
+  font-size: 50px;
+  font-weight: 500;
+   max-height: 3%;
+}
+
+
+
+/*********** Parallax Css **********/
+
+.parallax-container {
+  height: 450px;
+  
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#par1 {
+  height: 350px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.card{
+  -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+p .article{
+  height:80%;
+}
+
+
+/********  Starting of Heading text  *********/
+
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 6s infinite alternate;
+  animation: moving-panel 6s infinite alternate;
+}
+
+.shape{
+  fill: #388e3c;
+}
+.colortext .anim-shape:nth-child(1) {
+  fill: #388e3c;
+}
+.colortext .anim-shape:nth-child(2) {
+  fill: #283593;
+}
+.colortext .anim-shape:nth-child(3) {
+  fill: #F5A503;
+}
+.colortext .anim-shape:nth-child(4) {
+  fill: #5D4037;
+}
+.colortext .anim-shape:nth-child(5) {
+  fill: #56D9CD;
+}
+.colortext .anim-shape:nth-child(6) {
+  fill: #536dfe;
+}
+
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+
+
+/*********** For Footer ***********/
+.footerul{
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 5%;
+    font-size: 16px;
+}

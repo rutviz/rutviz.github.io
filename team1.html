@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="css/tech.css"/>
+      <!--<link rel="stylesheet" href="css/tech.css"/>-->
       <link rel="stylesheet" href="css/team.css"/>
     
       <!--Let browser know website is optimized for mobile-->
@@ -25,15 +25,20 @@
       	$(".button-collapse").sideNav();
       	 $('.modal-trigger').leanModal();
       });
-      function eff(a){
-		
-		$(".info"+a).css("display","block");
-		window.setTimeout(function(){
-				$(".brd"+a).css("height","0px");
-                $(".info"+a).css("height","300px"); 
-                  }, 000);
+		function eff(a){
+			
+			$(".brd"+a).css("height","0");
+			setTimeout(function(){
+			$(".info"+a).css("height","300px");
+			}, 1500);
 		}
-      </script>
+		function cls1(a){
+			$(".brd"+a).css("height","300px");
+			$(".info"+a).css("height","0");
+			
+			
+		}
+	</script>
     </head>
 
     <body> 
@@ -72,9 +77,108 @@
 			<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
 	</ul>
 	<div class="container">
-		<div class="title">Team </div>
+		<ul class="tabs col m1" style="width:23%">
+        <li class="tab col s1" style="margin-right:10%;"><a class="active  right-align" href="#test1">Test 1</a></li>
+        <li class="tab col s3" style="margin-left:10%"><a  href="#test2" class="left-align">Test 2</a></li>
+      </ul>
+	  <!-- tab1-->
+	  <div id="test1" style="overflow:hidden;" class="animation fade-out">
 	<!--Detail-->
-		<div class="row">
+		<div class="row" style="overflow-Y:hidden;" >
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd1 brd">
+				  <div class="curve1 curve " onclick="eff('1');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info1" >Rutviz<i class="material-icons right" onclick="cls1(1);">close</i></div>
+			  </div>
+        </div>
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd2 brd">
+				  <div class="curve2 curve " onclick="eff('2');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info2" >Rutviz<i class="material-icons right" onclick="cls1(2);">close</i></div>
+			  </div>
+        </div>
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd3 brd">
+				  <div class="curve3 curve " onclick="eff('3');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info3" >Rutviz<i class="material-icons right" onclick="cls1(3);">close</i></div>
+			  </div>
+        </div>
+        </div>
+		<!-- row 2-->
+		<div class="row" style="overflow-Y:hidden;" >
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd4 brd">
+				  <div class="curve1 curve " onclick="eff('4');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info4" >Rutviz<i class="material-icons right" onclick="cls1(4);">close</i></div>
+			  </div>
+        </div>
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd5 brd">
+				  <div class="curve2 curve " onclick="eff('5');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info5" >Rutviz<i class="material-icons right" onclick="cls1(5);">close</i></div>
+			  </div>
+        </div>
+		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
+           <div class="card purple" style="overflow-Y:hidden; border-radius:10px;">
+				<div class="card-image waves-effect waves-block waves-light brd6 brd">
+				  <div class="curve3 curve " onclick="eff('6');" style="background:url('harshit.jpg');" ></div>
+				</div>
+				
+				<div class="card-content">
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
+				  <p><a href="#">Web Designer</a></p>
+				  
+				</div>
+				<div class="info info6" >Rutviz<i class="material-icons right" onclick="cls1(6);">close</i></div>
+			  </div>
+        </div>
+        </div>
+	</div>
+
+	<!-- tab 1 over -->
+	<!--2 tab-->
+	<div id="test2">
+	<div class="row" >
 		<div class="col m3" style="width:33%; max-width:310px;min-width:310px;">
            <div class="card" style="overflow-Y:hidden; border-radius:10px;">
 				<div class="card-image waves-effect waves-block waves-light brd1 brd">
@@ -115,7 +219,7 @@
 				  <div class="activator curve" style="background:url('harshit.jpg');" ></div>
 				</div>
 				<div class="card-content">
-				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh<i class="material-icons right">info_outline</i></span>
+				  <span class="card-title activator grey-text text-darken-4">Harshit Kumar Singh</span>
 				  <p><a href="#">Web Designer</a></p>
 				</div>
 				<div class="card-reveal">
@@ -125,11 +229,8 @@
 			  </div>
         </div>
         </div>
-		
 	</div>
-         
-	
-	
+    </div>
 		<!-- Footer -->
 		<footer class="page-footer blue lighten-1">
 	        <div class="container">

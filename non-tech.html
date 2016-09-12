@@ -9,15 +9,11 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/non-tech.css"/>
-      <link rel="stylesheet" href="css/article.css"/>
     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-
-	  <script src="//cdn.transifex.com/live.js"></script>
 	  <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
       $( document ).ready(function(){
@@ -46,8 +42,11 @@
 		        <li><a href="index.html">Home</a></li>
 		        <li><a href="tech.html">Technical</a></li>
 		        <li><a href="non-tech.html">Non-Technical</a></li>
+		        <li><a href="guest.html">Guest</a></li>
+		        <li><a href="csehappening.html">CSE Happenings</a></li>
 				<li><a href="#1">PU Happenings</a></li>
-		        <li><a href="#1">About</a></li>
+				<li><a href="faq.html">FAQs</a></li>
+		        <li><a href="#1">Team</a></li>
 		      </ul>
 		    </div>
 		</nav>
@@ -65,8 +64,11 @@
 	    <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
 		<li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
 		<li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
-		<li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happenin</a></li>
-		<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
+		<li><a class="waves-effect" href="guest.html"><i class="material-icons">contact_mail</i>Guest</a></li>
+		<li><a class="waves-effect" href="csehappening.html"><i class="material-icons">developer_mode</i>CSE Happenings</a></li>
+		<li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
+		<li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
+		<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>Team</a></li>
 	</ul>
 	<!-- Heading -->
 
@@ -106,9 +108,9 @@
 		</div>
 		
 	<!-- Cards -->	
-      <div class="row section scrollspy" id="row1"> 
+      <div class="container section scrollspy" id="row1"> 
     	<div class="row">
-			    <div class="col m3">
+			    <div class="col m4">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" height="55%" src="images/tech_sept_1.jpg">
@@ -140,7 +142,7 @@
 				</div>
 			  	
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_2.jpg">
@@ -168,7 +170,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_3.jpg">
@@ -206,12 +208,12 @@
     		<div class="parallax"><img src="images/poem.jpg" style=" overflow: none; display: block;"></div>
   		</div>
 		<div class="hide-on-large-only">
-			<img src="images/back2.jpg" style="width:100%;">
+			<img src="images/poem.jpg" style="width:100%;">
 		</div>
 
-  	<div class="row" id="row2">
+  	<div class="container" id="row2">
 		<div class="row">
-			    <div class="col m3 ">
+			    <div class="col m4 ">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -239,7 +241,7 @@
 			  		</div>
 			  	</div>
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -267,7 +269,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -304,12 +306,12 @@
     		<div class="parallax"><img src="images/11.png" style=" overflow: none; display: block;"></div>
   		</div>
 		<div class="hide-on-large-only">
-			<img src="images/back2.jpg" style="width:100%;">
+			<img src="images/11.png" style="width:100%;">
 		</div>
 
-  	<div class="row" id="row3">
+  	<div class="container" id="row3">
 		<div class="row">
-			    <div class="col m3">
+			    <div class="col m4">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -337,7 +339,7 @@
 			  		</div>
 			  	</div>
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -365,7 +367,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/article2.png">
@@ -405,9 +407,9 @@
 			<img src="images/photography.jpg" style="width:100%;">
 		</div>
 	<!-- Cards -->	
-      <div class="row" id="row1"> 
+      <div class="container" id="row1"> 
     	<div class="row">
-			    <div class="col m3">
+			    <div class="col m4">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" height="55%" src="images/tech_sept_1.jpg">
@@ -437,7 +439,7 @@
 				</div>
 			  	
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_2.jpg">
@@ -465,7 +467,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_3.jpg">
@@ -506,9 +508,9 @@
 			<img src="images/puzzle.jpg" style="width:100%;">
 		</div>
 	<!-- Cards -->	
-      <div class="row" id="row1"> 
+      <div class="container" id="row1"> 
     	<div class="row">
-			    <div class="col m3">
+			    <div class="col m4">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" height="55%" src="images/tech_sept_1.jpg">
@@ -538,7 +540,7 @@
 				</div>
 			  	
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_2.jpg">
@@ -566,7 +568,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_3.jpg">
@@ -604,12 +606,12 @@
     		<div class="parallax"><img src="images/stories1.jpg" style=" overflow: none; display: block;"></div>
   		</div>
 		<div class="hide-on-large-only">
-			<img src="images/story.jpg" style="width:100%;">
+			<img src="images/stories1.jpg" style="width:100%;">
 		</div>
 	<!-- Cards -->	
-      <div class="row" id="row1"> 
+      <div class="container" id="row1"> 
     	<div class="row">
-			    <div class="col m3">
+			    <div class="col m4">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" height="55%" src="images/tech_sept_1.jpg">
@@ -639,7 +641,7 @@
 				</div>
 			  	
 		  		
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_2.jpg">
@@ -667,7 +669,7 @@
 			  		</div>
 		  		</div>
 
-		  		<div class="col m3 offset-m1">
+		  		<div class="col m4">
 			  		<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator thumbnail" src="images/tech_sept_3.jpg">
