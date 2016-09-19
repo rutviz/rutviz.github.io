@@ -1,60 +1,27 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Product Card</title>
+  <html>
+    <head>
     <title>MagArete: An E-Magazine</title>
     <meta charset="UTF-8">
-      <!--Import Icons & Font-->
+      <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-      <!--Import css-->
+      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css"/>
-      <link rel="stylesheet" href="css/article.css"/>
     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!--Import jQuery before materialize.js-->
       
-      <!-- pre loader -->
-      <meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
-		<script src="js/modernizr.custom.js"></script>
-    
-     <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-      $( document ).ready(function(){
-      	$(".button-collapse").sideNav();
-      	 $('.parallax').parallax();
-      	 $('.modal-trigger').leanModal();
-      	  $('.scrollspy').scrollSpy();
-      });
-      
-      </script>
-    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    </head>
 
-        <link rel="stylesheet" href="css/team.css">
+    <body> 
 
-    
-    
-    
-  </head>
-
-  <body>
-		
-			  <!-- Navigation Bar -->
+	<!-- Navigation Bar -->
 	<div class="navbar-fixed">
 		<nav>
-		    <div class="nav-wrapper green darken-2">
+		    <div class="nav-wrapper indigo darken-3">
 		      <a href="index.html" class="brand-logo">MagArete</a>
 		      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
@@ -62,8 +29,11 @@
 		        <li><a href="index.html">Home</a></li>
 		        <li><a href="tech.html">Technical</a></li>
 		        <li><a href="non-tech.html">Non-Technical</a></li>
+		        <li><a href="guest.html">Guest</a></li>
+		        <li><a href="csehappening.html">CSE Happenings</a></li>
 				<li><a href="#1">PU Happenings</a></li>
-		        <li><a href="#1">About</a></li>
+				<li><a href="faq.html">FAQs</a></li>
+		        <li><a href="team.html">Team</a></li>
 		      </ul>
 		    </div>
 		</nav>
@@ -81,24 +51,270 @@
 	    <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
 		<li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
 		<li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+		<li><a class="waves-effect" href="guest.html"><i class="material-icons">contact_mail</i>Guest</a></li>
+		<li><a class="waves-effect" href="csehappening.html"><i class="material-icons">developer_mode</i>CSE Happenings</a></li>
 		<li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
-		<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
+		<li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
+		<li><a class="waves-effect" href="team.html"><i class="material-icons">info_outline</i>Team</a></li>
 	</ul>
-			  
-				  <div class="card1">
-			<div class="box-wrapper" style="left:50%">
-				  <img src="me.jpg" alt="rhcp" />
-				<div class="box-content">
-						<a class="buy c2"><span><i class="fa fa-info"></i></span></a>
-						<div class="title">Rutviz Vyas</div>
-						<div class="desc">Web Designer</div>	
-						
-				  </div>
-				  <div class="success">Rutviz Vyas</div>
-				  </div>
-				  </div>
-		<!-- Footer -->
-		<footer class="page-footer green darken-2">
+	
+	<!-- Heading -->
+
+	<div id="title">
+		<svg viewBox="0 0 1000 80">
+		  <!-- Symbol with text-->
+		  <symbol id="s-text">
+		    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">Team</text>
+		  </symbol>
+		  <!-- Clippath with text-->
+		  <clippath id="cp-text">
+		    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">Team</text>
+		  </clippath>
+
+		  <!-- Group with clippath for text-->
+		  <g clip-path="url(#cp-text)" class="colortext">
+		    <rect width="100%" height="100%" class="shape"></rect>
+		    <rect width="60%" height="100%" class="anim-shape"></rect>
+		    <rect width="54%" height="100%" class="anim-shape"></rect>
+		    <rect width="47%" height="100%" class="anim-shape"></rect>
+		    <rect width="41%" height="100%" class="anim-shape"></rect>
+		    <rect width="35%" height="100%" class="anim-shape"></rect>
+		  </g>
+
+		  <!-- Transparent copy of text to keep patterned text selectable-->
+		  <use xlink:href="#s-text" class="text--transparent"></use>
+		</svg>
+	</div> 
+	<div class="deep-orange lighten-1">
+	<div class="container">
+		<div class="row">
+		<h3 class="center-align">developer Team</h3>
+        <div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/rutviz.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Rutviz Vyas<i class="material-icons right">more_vert</i></span>
+			  <p><br>Web Developer</p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Rutviz Vyas<i class="material-icons right">close</i></span>
+			  <p>All about me</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	
+        
+	
+	
+	<!--cards-->
+	
+	<div class="row">
+	<div class="container">
+		<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	
+	
+	
+	<div class="row">
+	<div class="container">
+		<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	
+	
+	
+	<div class="row">
+	<div class="container">
+		<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/harshit.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+		
+		<div class="col s12 m4">
+          <div class="card">
+			<div class="card-image waves-effect waves-block waves-light">
+			  <img class="activator" src="images/rutviz.jpg">
+			</div>
+			<div class="card-content">
+			  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+			  <p><a href="#">This is a link</a></p>
+			</div>
+			<div class="card-reveal">
+			  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+			  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+			</div>
+		  </div>
+        </div>
+      </div>
+	</div>
+	</div>
+	
+	
+	
+	<!-- Footer -->
+		<footer class="page-footer indigo darken-3">
 	        <div class="container">
 	            <div class="row">
 		            <div class="col l6 s12">
@@ -126,19 +342,23 @@
 
 	        </div>
          
-         	<div class="footer-copyright green darken-2">
+         	<div class="footer-copyright indigo darken-4">
             	<div class="container">
 	            	&copy; 2016 Copyright MagArete
 	            	<a class="white-text text-white right" href="#!">Designed and Developed by Parul University</a>
             	</div>
          	</div>
         </footer>
-    
-
-        <script src="js/index.js"></script>
-
-    
-    
-    
-  </body>
-</html>
+		
+		<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(){
+      	$(".button-collapse").sideNav();
+      	 $('.parallax').parallax();
+      	 $('.modal-trigger').leanModal();
+      });
+      
+      </script>
+    </body>
+  </html>

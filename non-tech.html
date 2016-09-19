@@ -8,28 +8,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="css/non-tech.css"/>
+      <link rel="stylesheet" href="css/style.css"/>
     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	  <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-      $( document ).ready(function(){
-      	$(".button-collapse").sideNav();
-      	 $('.parallax').parallax();
-      	 $('.modal-trigger').leanModal();
-      	 $('.scrollspy').scrollSpy();
-      });
       
-      </script>
     </head>
 
     <body> 
-
-	<!-- Dropdown Structure -->
-		
 
 	<!-- Navigation Bar -->
 	<div class="navbar-fixed">
@@ -46,7 +33,7 @@
 		        <li><a href="csehappening.html">CSE Happenings</a></li>
 				<li><a href="#1">PU Happenings</a></li>
 				<li><a href="faq.html">FAQs</a></li>
-		        <li><a href="#1">Team</a></li>
+		        <li><a href="team.html">Team</a></li>
 		      </ul>
 		    </div>
 		</nav>
@@ -68,11 +55,12 @@
 		<li><a class="waves-effect" href="csehappening.html"><i class="material-icons">developer_mode</i>CSE Happenings</a></li>
 		<li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
 		<li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
-		<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>Team</a></li>
+		<li><a class="waves-effect" href="team.html"><i class="material-icons">info_outline</i>Team</a></li>
 	</ul>
+	
 	<!-- Heading -->
 
-	<div id="title" style="background-color:#FFF;">
+	<div id="title">
 		<svg viewBox="0 0 1000 80">
 		  <!-- Symbol with text-->
 		  <symbol id="s-text">
@@ -86,10 +74,10 @@
 		  <!-- Group with clippath for text-->
 		  <g clip-path="url(#cp-text)" class="colortext">
 		    <rect width="100%" height="100%" class="shape"></rect>
-		    <rect width="79%" height="100%" class="anim-shape"></rect>
-		    <rect width="68%" height="100%" class="anim-shape"></rect>
-		    <rect width="57%" height="100%" class="anim-shape"></rect>
-		    <rect width="46%" height="100%" class="anim-shape"></rect>
+		    <rect width="60%" height="100%" class="anim-shape"></rect>
+		    <rect width="54%" height="100%" class="anim-shape"></rect>
+		    <rect width="47%" height="100%" class="anim-shape"></rect>
+		    <rect width="41%" height="100%" class="anim-shape"></rect>
 		    <rect width="35%" height="100%" class="anim-shape"></rect>
 		  </g>
 
@@ -97,6 +85,7 @@
 		  <use xlink:href="#s-text" class="text--transparent"></use>
 		</svg>
 	</div> 
+
 
 	<!-- Parallex Effect -->
 
@@ -705,7 +694,7 @@
 
 	<!-- Footer -->
 		<footer class="page-footer indigo darken-3">
-	         <div class="container">
+	        <div class="container">
 	            <div class="row">
 		            <div class="col l6 s12">
 		                <h5 class="white-text">Parul University</h5>
@@ -732,13 +721,22 @@
 
 	        </div>
          
-         	<div class="footer-copyright">
+         	<div class="footer-copyright indigo darken-4">
             	<div class="container">
 	            	&copy; 2016 Copyright MagArete
 	            	<a class="white-text text-white right" href="#!">Designed and Developed by Parul University</a>
             	</div>
          	</div>
         </footer>
-        
+        <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(){
+      	$(".button-collapse").sideNav();
+      	 $('.parallax').parallax();
+      	 $('.modal-trigger').leanModal();
+      });
+      
+      </script>
     </body>
   </html>

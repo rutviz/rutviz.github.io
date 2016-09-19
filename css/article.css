@@ -1,12 +1,10 @@
-
-
 body{
   width: 100%;
   display: inline-block;
+  font-family:roboto;
 }
 
 pre {
-     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
     text-align: justify;
     white-space: pre-wrap;       /* Since CSS 2.1 */
@@ -21,15 +19,14 @@ pre {
 }
 
 #header {
-	font-size: 150%;
     width: 90%;
+    font-size: 150%;
     font-weight: 800;
     margin-left: 6%;
 }
 
 #header1 {
-	font-size: 230%;
-    width: 90%;
+	font-size: 200%;
     font-weight: 700;
     margin-left: 6%;
 }
@@ -39,7 +36,7 @@ background:
 linear-gradient(140deg, #EDD382 25%, transparent 25%) -74px 0,
 linear-gradient(220deg, #EDD382 25%, transparent 25%) -74px 0;
 background-size: 50px 50px;
-background-color: #ecf0f1;
+background-color: #FFF;
 }
 
 #zig-zag2 {
@@ -47,7 +44,7 @@ background:
 linear-gradient(45deg, #EDD382 25%, transparent 25%) -74px 0,
 linear-gradient(315deg, #EDD382 25%, transparent 25%) -74px 0;
 background-size: 50px 50px;
-background-color: #ecf0f1;
+background-color: #fff;
 }
 
 a {
@@ -178,3 +175,87 @@ h2 {
   margin-top: 0;
 }
 
+/*******share button******/
+
+/* Reset */
+.social-buttons {
+  height: 90px;
+  margin: 12%;
+  margin-left: 71%;
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-button {
+  display: inline-block;
+  background-color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: .99;
+  border-radius: 28%;
+  box-shadow: 4rem 4rem 5rem -2rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: '';
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.facebook:before {
+  background-color: #3B5998;
+}
+.social-button.facebook .fa {
+  color: #3B5998;
+  margin-top: -60%;
+}
+.social-button.twitter:before {
+  background-color: #3CF;
+}
+.social-button.twitter .fa {
+  color: #3CF;
+  margin-top: -60%;
+}
+.social-button.google:before {
+  background-color: #DC4A38;
+}
+.social-button.google .fa {
+  color: #DC4A38;
+  margin-top: -60%;
+}
+
+.social-button:focus:before, .social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa, .social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
