@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>MagArete: An E-Magazine</title>
+    <meta charset="UTF-8">
+      <!--Import Icons & Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!--Import css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/article.css"/>
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <!-- pre loader -->
+      <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<script src="js/modernizr.custom.js"></script>
+	  
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(){
+      	$(".button-collapse").sideNav();
+      	$(".modal-trigger").leanModal();
+      });
+
+      function shut(){
+          $('#modal1').closeModal();
+      }
+
+      </script>
+	  
+	  <!-- For Share -->
+      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/share.css">
+    </head>
+
+    <body> 
+  
+  <!-- Navigation Bar -->
+  <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper yellow darken-3">
+          <a href="index.html" class="brand-logo">MagArete</a>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" style="margin-left: 20%;">menu</i></a>
+          <a href="#modal1" class="right hide-on-large-only modal-trigger"><i class="material-icons" style="margin-left: -30%;">share</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Technical</a></li>
+            <li><a href="non-tech.html">Non-Technical</a></li>
+            <li><a href="guest.html">Guest</a></li>
+            <li><a href="csehappening.html">CSE Happenings</a></li>
+            <li><a href="#1">PU Happenings</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="#1">Team</a></li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <ul id="slide-out" class="side-nav left-align">
+      <li><div class="userView">
+        <img class="background" src="images/2.jpg">
+            <a href="#!user"><img class="circle" src="images/contactpic.png"></a>
+            <a href="#!name"><span class="white-text name">Name</span></a>
+            <a href="#!email"><span class="white-text email">mail@web.xyz</span></a>
+          </div>
+    </li>
+  
+      <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
+    <li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+    <li><a class="waves-effect" href="guest.html"><i class="material-icons">contact_mail</i>Guest</a></li>
+    <li><a class="waves-effect" href="csehappening.html"><i class="material-icons">developer_mode</i>CSE Happenings</a></li>
+    <li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
+    <li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>Team</a></li>
+  </ul>
+<!-- Header -->
+  <header class="c-header">
+    <div id="header" class="hide-on-large-only">European Summer School-2016</div>
+    <div id="header1" class="hide-on-med-and-down">European Summer School-2016</div>
+
+      <!-- Share Button -->
+    <div class="social-buttons hide-on-med-and-down">
+      <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://plus.google.com/share?url=https://MagArete.in" target="_blank" class="social-button google"><i class="fa fa-google"></i></a>
+    
+    </div>
+
+    <!-- For Mobile -->
+		<div id="modal1" class="modal bottom-sheet">
+			<div class="modal-content">
+      <p>Share with</p>
+				<div class="collection">
+					<a href="whatsapp://send?text=Hey checkout my article at <a href="www.MagArete.in/article"" class="collection-item" data-action="share/whatsapp/share" style="color:#4dc247;" onclick="shut();"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
+					
+          <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="collection-item " style="color:#3b5998" onclick="shut();"><i class="fa fa-facebook"></i> Facebook</a>
+					
+          <a href="https://plus.google.com/share?url=https://MagArete.com" target="_blank" class="collection-item "style="color:#d34836" onclick="shut();"><i class="fa fa-google"></i> G-plus</a>
+					
+          <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="collection-item " style="color:#4099ff"  onclick="shut();"><i class="fa fa-twitter"></i> Twitter</a>	
+				</div>
+				
+			</div>
+		</div>
+
+</header>
+
+
+<div id="zig-zag1" class="pattern">
+</div>
+
+
+<section class="c-posts">
+  <article class="c-posts__item">
+  
+    <pre><i>P</i>arul Institute of management (PIM) has always been providing golden opportunities to its students which add up values not only to their resume but also to their lives. PIM under the umbrella of Parul university got the privilege of participating in the international student exchange program. Parul university has signed MOUs with the universities of several foreign countries. One of them is University of Applied Sciences (UAS), Bielefeld, Germany, under which students are selected for exchange program every year to learn the subjects of their stream and interest with an additional benefit of studying cross cultural programs, under the banner of European Summer School.  Students from various countries like France, USA, Canada, India etc. participate in this program and get to know about the diverse culture and business environments around the world. 
+This year 4 students from PIM-PGDM were selected to study a 6 weeks’ European Summer School 2016 program in UAS, Germany. The program was initiated on May 9th, 2016 and was successfully completed on June 17th 2016. In addition to that German Academic Exchange Service (DAAD) had sponsored a major amount of expenses, which included Tuition fees, accommodation, travelling and insurance. The students who participated in this European Summer School (ESS) are as follows Dhara Faldu(2nd year- Finance and Marketing), Puja Rathor(2nd year- Human Resource and Marketing), Riken Bhatt(2nd year- Finance and Marketing) and Rohan Sardesai(2nd year- International Business and Marketing).
+<p>
+Under ESS the students were enlightened with 2 major subjects- 1st was “European Culture and Management” which was further divided into several topics named as Cross cultural management, International controlling, comparison of some international information security standards, the Dutch economy and HRM, European logistics and supply chain management and Responsible leadership in multinational enterprises. The 2nd major subject was “European Politics and Business”, under which the students learned European/German History, Territorial development in Europe under the cohesion policy, International Taxation, International Economics, The Finnish approach to innovation Management: Raising business and social innovation competences, and European politics and institutions. These topics provided an in-depth knowledge to the students and fulfilled the main objective of ESS.
+Moreover, ESS also arranged one day industrial visits to two well known companies of Germany and one of Netherlands. 1st industrial visit was at “Dr. Oetkar”, a traditional and international food brand company founded in 1891 by Mr. August Oetkar, which has its headquarters in Bielefeld, Germany. And 2nd industrial visit was at “Kuehne + Nagel”, a global transportation and logistics company founded in 1890, with its major business in Bielefeld. 3rd industrial visit was to “Gate Terminal”, the first Dutch Liquefied Natural Gas import terminal located near Rotterdam, Netherlands. All these industrial visits made the students practically aware of European culture and business strategies.</p>
+<p>
+In addition to that, ESS also organized Field trips to cities, which included two cities from Germany and one city from Netherlands. The 1st visit was to Frankfurt, which was scheduled for two days wherein the students explored the most important financial centre of European continent, also known as “Bankfurt”, reason being a birthplace of banking system and a hub to several important banks around the planet. ESS arranged a boat trip in River Main of Frankfurt and a night-stay at a convenient accommodation. The 2nd visited city was Berlin, the largest city and capital of Germany, which was scheduled for three days. The students also came across the historical Berlin wall. An entertaining boat trip, city tours and a relaxing stay was arranged by ESS. The 3rd city visited was Rotterdam, Netherlands. It was a three days’ visit wherein the students observed the major logistics operations simultaneously enjoying the city tours arranged by ESS. Also, the students from The Hague University of Applied sciences, Netherlands, welcomed us all by arranging a boat party for gathering all the guest students. The city trips were very exciting and full of knowledge with fun.
+In a nutshell, ESS had been a wonderful learning experience for the students, complete package upskilling students by exploring a whole new educational system, discovering variations in the business strategies, methods for managing employees, observing the service sector of a developed country and not to forget the Language, of course.  
+</p>
+</pre>
+  </article>
+</section>
+
+<div id="zig-zag2" class="pattern">
+</div>
+<div class="c-footer">
+  <p>Article given by <b>Dhara Patel</b></p>
+</div>
+
+
+  <!-- Footer -->
+    <footer class="page-footer yellow darken-3">
+          <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Parul University</h5>
+                    <p class="grey-text text-lighten-4">P.O.Limda, Ta.Waghodia - 391760 
+                    <br>Dist. Vadodara, Gujarat (India)</p>
+                <br>
+                    <h5 class="white-text">Contact us</h5>
+                  <ul class="ul1" style=" text-align: left; margin-top: 0px; color: #fff; font-size: 16px;">
+                    <li><b>Phone :</b> +91-2668-260312 <br> (202)-(300)-(307)</li>
+              <li><b>Fax :</b> +91-2668-260201</li>
+              <li><b>Email :</b> magarete.cse@gmail.com</li>
+            </ul>
+                
+                </div>
+                  
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul class="footerul">
+                      <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li> 
+                      <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i> Gmail</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+         
+          <div class="footer-copyright yellow darken-4">
+              <div class="container">
+                &copy; 2016 Copyright MagArete
+                <a class="white-text text-white right" href="#!">Designed and Developed by Parul University</a>
+              </div>
+          </div>
+        </footer>
+    </body>
+  </html>
+
