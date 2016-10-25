@@ -90,9 +90,9 @@
       <div class="container"> 
     	<div class="row">
 			    <div class="col m12" style="width: 100%">
-			      	 <ul class="collapsible popout" data-collapsible="accordion">
+			      	 <ul class="collapsible popout " data-collapsible="accordion">
 					    <li>
-					      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+					      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>First</div>
 					      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
 					    </li>
 					    <li>
@@ -158,7 +158,16 @@
             	</div>
          	</div>
         </footer>
-
-
+	
+		<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+		<script>
+			 $(document).ready(function(){
+				$('.collapsible').collapsible({
+				  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+				});
+			  });
+		</script>
+		
     </body>
   </html>
