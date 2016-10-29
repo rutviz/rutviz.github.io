@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Oswald');
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  font: 100%/1.5 sans-serif;
+  box-sizing: border-box;
+}
+
+.wf-active body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100em;
+  overflow: auto;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    background-image: url("data:image/svg+xml;charset='utf8',%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 400'%3E%3Cpolygon fill='rgb(255,255,255)' points='687,364 320,316 320,400 985,400 985.003,380.847 795,337'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset='utf8',%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='400' viewBox='0 0 1600 400'%3E%3Cpolygon fill='rgb(28,28,28)' points='1270,350 1068,380 985,380 985,400 1270,400'/%3E%3Cpolygon fill='rgb(255,255,255)' points='1270,342.35 1068,390 985,370.85 985,360.85 1068,380 1270,332.35'/%3E%3Cpolygon fill='rgb(216,0,50)' points='1270,352.35 1068,400 985,380.85 985,370.85 1068,390 1270,342.35'/%3E%3Cpolygon fill='rgb(255,255,255)' points='1280,329.984 1270,332.35 1270,400 1280,400'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center 5px, center 25px;
+    background-size: contain;
+  }
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+  border-right: 10px solid #fff;
+  overflow: auto;
+}
+
+.content {
+  background-color: #fff;
+  padding: 3em 2em;
+}
+@media (min-width: 960px) {
+  .content {
+    float: left;
+    width: 100%;
+  }
+}
+
+.sidebar {
+  color: #fff;
+}
+@media (min-width: 960px) {
+  .sidebar {
+    float: right;
+    width: 30%;
+  }
+}
+
+ul[class*="cd-slider"] {
+  list-style: none;
+}
+
+.sidebar ul {
+  padding: 2em;
+  margin-top: 2em;
+  list-style: circle;
+}
+
+.sidebar ul li {
+  font-size: 1em;
+  margin-left: 1.5em;
+}
+
+.content p {
+  padding: .5em 0;
+}
+
+img, svg, image {
+  max-width: 100%;
+}
+
+#bottom {
+  text-align: center;
+  font-family: "Lucida Calligraphy" ,cursive;
+  background-color: #000;
+  color: white;
+  height: 50px;
+  font-size: 25px;
+  padding: .5em 1em;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+#bottom a {
+  display: inline-block;
+  color: #fff;
+  padding: .5em 0 .25em;
+  text-decoration: none;
+  box-shadow: inset 0 -6px 0 transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#bottom a:hover {
+  box-shadow: inset 0 -6px 0 #4d4d4d;
+}
+
+
+p{
+  font-family: Garamond;
+  font-size: 20px;
+  width: 100%;
+}
+
+h3{
+  font-family:"Lucida Calligraphy", cursive;
+  font-size: 23px;
+}
+
+#list {
+  margin-left: 3%;
+  font-size: 18px;
+}
+
+i{
+  font-size: 30px;
+}
+
+#border {
+  width: 100%;
+  margin-bottom:-1%; 
+}
+
+#name {
+  font-family:'Roboto Slab',Georgia,serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 3%;
+}
+
+#author {
+  background: #0a4abb;
+  font-size: 26px;
+  font-family:"Lucida Calligraphy", cursive;
+  color: #fff;
+  height:45px;
+}
