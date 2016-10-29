@@ -156,7 +156,7 @@ p .article{
     width: 116%;
     right: 8%;
     height: 60%;
-    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+    background-image: url("../images/photoback.jpg");
     background-size: cover;
     border-bottom: solid 1px lightgrey;
 }
@@ -727,4 +727,28 @@ p .article{
     width: 100%%;
   }
 
+}
+.img1{
+	background-image: url('../images/4.jpg');
+	
+}.img2{
+	background-image: url('../images/5.jpg');
+	
+}.img3{
+	background-image: url('../images/6.jpg');
+	
+}.img4{
+	background-image: url('../images/7.jpg');
+}
+.mimg1{
+	background-image: url('../images/rutviz.jpg');
+	
+}.mimg2{
+	background-image: url('../images/harshit.jpg');
+	
+}.mimg3{
+	background-image: url('../images/contactpic1.png');
+	
+}.mimg4{
+	background-image: url('../images/contactpic2.png');
 }
