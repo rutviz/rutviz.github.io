@@ -1,0 +1,51 @@
+
+.shade{
+	opacity:0.9;
+}
+/* Navbar css */
+header{
+	position:fixed;
+	z-index:2;
+	color:#fff;
+	padding:30px;
+	margin-left:200px;
+	font-size:20px;
+	font-weight:800;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+	color:#FFF !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	transition:background-color 0.2s;
+	transition-property:Back Pulse;
+	
+}
+.scene{
+	display:none;
+}
+
+li a:hover {
+    background-color:#FFF;
+	color:#000!important;
+	opacity:0.8;
+}
+
+/* End */
+
+.layer{
+	position:fixed;
+	
+}
