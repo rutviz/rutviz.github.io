@@ -1,11 +1,33 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello Build!</title>
-        <link href='/dkudos/KudosWidget.css' rel="stylesheet" />    
-    </head>
-    <body>
-        <figure data-dojo-type="dkudos/KudosWidget" id="kudos"></figure>
-        <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
-        <script src="/assets/dojo.min.js"></script>
-    </body>
+<head>
+	<title></title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"></style>
+	<style type="text/css">
+  .ripple{
+    height: 10px;
+    width: 10px;
+    background-color: #336699;
+  }
+	</style>
+</head>
+<body>
+<div class="ripple" ></div>
+<div class="inner animated bounce">szdfvsfxgv</div>
+<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	  <script type="text/javascript">
+	  	$(".ripple").click(function() {
+		  $(".inner").addClass("animated bounce");
+      setTimeout(function(){
+         //wait for card1 flip to finish and then flip 2
+        $(".inner").removeClass("animated bounce");
+      }, 1000);
+
+       
+		});
+	  </script>
+</body>
 </html>

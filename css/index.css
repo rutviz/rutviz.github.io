@@ -1,0 +1,67 @@
+
+html,body{
+	color:white;
+}
+.sidenav{
+	background-color: #13102b;
+}
+.sidenav a{
+	color: white !important;
+}
+.blakish{
+	/*background: #141E30;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to top, #14132c,#2d1030, #14132c);  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to top, #14132c,#2d1030, #14132c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url('../images/bg.jpg');
+}
+a .section:hover{
+	color: #FFF;
+	background-color: #2b1935;
+	cursor: pointer;
+}
+.body_bg{
+	background-image: url('../images/about.jpg');
+	background-size: cover;
+}
+.active1 {
+    background-color: #2b1935;
+    /*color:#db3784;*/color: #FFF;
+    opacity: 0.8;
+    border-left-width:10px;
+    border-left-style :solid;
+    border-left-color:#db3784; 
+}
+a{
+	color:#FFF !important;
+}/*
+.about_div{
+	height: 0px;
+	overflow: hidden;
+	transition: height 700ms linear;
+}
+.work_div{
+	height: 0px;
+	overflow: hidden;
+	transition: height 700ms linear;
+}
+.labs_div{
+	overflow: hidden;
+	transition: height 700ms linear;
+	height: 0px;
+}
+.contact_div{
+	overflow: hidden;
+	transition: height 700ms linear;
+	height: 0px;
+}
+
+*/
+
+/*changes in materialise*/
+.row{
+	margin-bottom: 0px;
+}
+
+
+/*  Ripple */
+

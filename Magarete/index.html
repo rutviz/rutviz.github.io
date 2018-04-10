@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>MagArete: An E-Magazine</title>
+    <meta charset="UTF-8">
+      <!--Import Icons & Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!--Import css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <!-- pre loader -->
+      <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" href="../favicon.ico">
+		<script src="js/modernizr.custom.js"></script>
+
+      <!-- preloader end-->
+    </head>
+
+    <body> 
+
+    <!-- Preloader -->
+    	
+ <div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo"> 
+				<svg class="ip-inner" width="10%" height="10%" viewBox="0 0 200 90" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">  
+
+				<div class="ip-loader"> <div id="logo"> <img src="images/logo2.png" style="min-height: 10%; max-width: 25%"><br><br> </div>
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 100 550">
+					
+						
+						<path fill="#4CAF50" class="ip-loader-circlebg" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3 c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+						<animateTransform 
+					         attributeName="transform" 
+					         attributeType="XML" 
+					         type="rotate"
+					         dur="2s" 
+					         from="0 50 50"
+					         to="360 50 50" 
+					         repeatCount="indefinite"/>
+					    </path>
+						<path fill="#2196F3" id="ip-loader-circle" class="ip-loader-circle" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+  c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+	  						<animateTransform 
+					         attributeName="transform" 
+					         attributeType="XML" 
+					         type="rotate"
+					         dur="1s" 
+					         from="0 50 50"
+					         to="-360 50 50" 
+					         repeatCount="indefinite" />
+				  		</path>
+				  		<path fill="#FF5722" id="ip-loader-c" class="ip-loader-c" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5  L82,35.7z">
+	  						<animateTransform 
+					         attributeName="transform" 
+					         attributeType="XML" 
+					         type="rotate"
+					         dur="2s" 
+					         from="0 50 50"
+					         to="360 50 50" 
+					         repeatCount="indefinite" />
+					  </path>
+					</svg>
+				</div>
+			</header></div>
+	
+	<!-- Navigation Bar -->
+	<div class="navbar-fixed">
+		<nav>
+		    <div class="nav-wrapper indigo darken-3">
+		      <a href="index.html" class="brand-logo">MagArete</a>
+		      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+		      <ul class="right hide-on-med-and-down">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="tech.html">Technical</a></li>
+		        <li><a href="non-tech.html">Non-Technical</a></li>
+		        <li><a href="guest.html">Guest</a></li>
+				<li><a href="faq.html">FAQs</a></li>
+		        <li><a href="team.html">Team</a></li>
+		      </ul>
+		    </div>
+		</nav>
+	</div>
+
+	<ul id="slide-out" class="side-nav left-align" style="width:220px">
+	     <li><div class="userView">
+       		 <img class="background" src="images/2.jpg">
+	            <a href="#!user"><img class="circle" src="images/contactpic.png"></a>
+	            <a href="#!name"><span class="white-text name">Name</span></a>
+	            <a href="#!email"><span class="white-text email">mail@web.xyz</span></a>
+	          </div>
+    	</li>
+	    <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+		<li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
+		<li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+		<li><a class="waves-effect" href="guest.html"><i class="material-icons">contact_mail</i>Guest</a></li>
+		<li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
+		<li><a class="waves-effect" href="team.html"><i class="material-icons">info_outline</i>Team</a></li>
+	</ul>
+
+	<!--for web-->
+	<div class="hide-on-med-and-down">
+	<!--carsole-->
+	
+	  <div class="carousel carousel-slider center" data-indicators="true" style="height:575px">
+    <div class="carousel-fixed-item center">
+	<ul class="section"><li>
+      <a class="btn waves-effect white grey-text darken-text-2" href="#cards">button</a>
+	  </li>
+	  </ul>
+    </div>
+    <div class="carousel-item red white-text img1" href="#one!">
+      <h2>Welcome To MagArete</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text img2" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text img3" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text img4" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+	<!--end carsole-->
+
+	<!-- heading -->
+	<div class="center-align" style="margin-top:80px;">
+		<h4>Articles from honorable dignitaries</h4>
+	</div>
+	 
+	<!-- Cards -->	
+    
+    	<div  class="container guest"> 
+		<br> <div id="cards" class="section scrollspy "></div>
+			<div class="row" style="width: 100%;">
+				<div class="col s12 m7" style="width: 100%;">
+				    <h5 class="header"></h5>
+				    <div class="card horizontal">
+				      <div class="card-image" id="ci">
+				       <br> <img src="images/contactpic.png"> <br>
+				      </div>
+				      <div class="card-stacked">
+					  
+				        <div class="card-content">
+				          <p>Dr. Gokulnath</p>
+				          <p>PIET IT HOD</p>
+				          <p>Article on : Altitude Vs Attitude</p>
+				        </div>
+				      <div class="card-action">
+						    	<a href="it_hod_article.html" class="btn waves-effect  yellow darken-4"><i class="fa fa-file-text-o"></i> Read Article</a> 
+						    </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		<br> <br> <br> 
+		</div>
+
+		<div class="container guest"> 
+		<br> 
+			<div class="row" style="width: 100%;">
+				<div class="col s12 m7" style="width: 100%;">
+				    <h5 class="header"></h5>
+				    <div class="card horizontal">
+				      <div class="card-image" id="ci">
+				       <br> <img src="images/contactpic2.png"> <br>
+				      </div>
+				      <div class="card-stacked">
+				        <div class="card-content">
+				          <p>Guest Name</p>
+				          <p>Designation</p>
+				          <p>Small bits of information.</p>
+				        </div>
+				      <div class="card-action">
+						    	<a href="article.html" class="btn waves-effect  yellow darken-4"><i class="fa fa-file-text-o"></i> Read Article</a> 
+						    </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		<br> <br> <br> 
+		</div>
+
+		<div class="container guest"> 
+		<br> 
+			<div class="row" style="width: 100%;">
+				<div class="col s12 m7" style="width: 100%;">
+				    <h5 class="header"></h5>
+				    <div class="card horizontal">
+				      <div class="card-image" id="ci">
+				       <br> <img src="images/contactpic3.png"> <br>
+				      </div>
+				      <div class="card-stacked">
+				        <div class="card-content">
+				          <p>Guest Name</p>
+				          <p>Designation</p>
+				          <p>Small bits of information.</p>
+				        </div>
+				      <div class="card-action">
+						    	<a href="article.html" class="btn waves-effect  yellow darken-4"><i class="fa fa-file-text-o"></i> Read Article</a> 
+						    </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		<br> <br> <br> 
+		</div>
+		</div>
+		
+		<!-- for mobile -->
+		<div class="hide-on-large-only">
+			
+			<!--carsole-->
+			<div class="carousel carousel-slider center" data-indicators="true" style="height:430px">
+				<div class="carousel-fixed-item center">
+				<ul class="section"><li>
+				  <a class="btn waves-effect white grey-text darken-text-2" href="#mcard">button</a>
+				  </li>
+				  </ul>
+				</div>
+				<div class="carousel-item red white-text mimg1" href="#one!">
+				  <h2>Welcome To MagArete</h2>
+				  <p class="white-text">This is your first panel</p>
+				</div>
+				<div class="carousel-item amber white-text mimg2" href="#two!">
+				  <h2>Second Panel</h2>
+				  <p class="white-text">This is your second panel</p>
+				</div>
+				<div class="carousel-item green white-text mimg3" href="#three!">
+				  <h2>Third Panel</h2>
+				  <p class="white-text">This is your third panel</p>
+				</div>
+				<div class="carousel-item blue white-text mimg4" href="#four!">
+				  <h2>Fourth Panel</h2>
+				  <p class="white-text">This is your fourth panel</p>
+				</div>
+			  </div>
+			  <!-- end of carsole-->
+		
+			<div class="container">
+				<h6 class="center-align" style="margin-top:30px;margin-bottom:30px;padding:30px;"><b>Articles from honorable dignitaries</b></h6>
+				<div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+						<div id="mcard" class="section scrollspy "></div>	
+					  <img class="activator" src="images/contactpic.png">
+					</div>
+					<div class="card-content">
+					  <span class="card-title activator grey-text text-darken-4">Dr. Gokulnath<i class="material-icons right">more_vert</i></span>
+					  <p><a class="activator">IT HOD PIET</a></p>
+					</div>
+					<div class="card-reveal">
+					  <span class="card-title grey-text text-darken-4">Altitude Vs Attitude<i class="material-icons right">close</i></span>
+					  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+					 <div class="card-action">
+					    	<center> <a href="it_hod_article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					 </div>
+				 </div>
+				 <div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+					  <img class="activator" src="images/contactpic.png">
+					</div>
+					<div class="card-content">
+					  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					  <p><a href="#">This is a link</a></p>
+					</div>
+					<div class="card-reveal">
+					  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+					<div class="card-action">
+					    	<center> <a href="it_hod_article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					 </div>
+				 </div>
+				 <div class="card">
+					<div class="card-image waves-effect waves-block waves-light">
+					  <img class="activator" src="images/contactpic.png">
+					</div>
+					<div class="card-content">
+					  <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					  <p><a href="#">This is a link</a></p>
+					</div>
+					<div class="card-reveal">
+					  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+					<div class="card-action">
+					    	<center> <a href="it_hod_article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					 </div>
+				 </div>
+			</div>
+		</div>
+ 
+	<!-- Footer -->
+		<footer class="page-footer indigo darken-3">
+	        <div class="container">
+	            <div class="row">
+		            <div class="col l6 s12">
+		                <h5 class="white-text">Parul University</h5>
+		                <p class="grey-text text-lighten-4">P.O.Limda, Ta.Waghodia - 391760 
+		                <br>Dist. Vadodara, Gujarat (India)</p>
+		            <br>
+		                <h5 class="white-text">Contact us</h5>
+	            		<ul class="ul1" style=" text-align: left; margin-top: 0px; color: #fff; font-size: 16px;">
+		            		<li><b>Phone :</b> +91-2668-260312 <br> (202)-(300)-(307)</li>
+							<li><b>Fax :</b> +91-2668-260201</li>
+							<li><b>Email :</b> magarete.cse@gmail.com</li>
+						</ul>
+	            	
+		            </div>
+	              	
+	            	<div class="col l4 offset-l2 s12">
+		                <h5 class="white-text">Links</h5>
+		                <ul class="footerul">
+		                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
+		                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope-o" aria-hidden="true"></i> Gmail</a></li>
+		                </ul>
+		            </div>
+	            </div>
+
+	        </div>
+         
+         	<div class="footer-copyright indigo darken-4">
+            	<div class="container">
+	            	&copy; 2016 Copyright MagArete
+	            	<a class="white-text text-white right" href="#!">Designed and Developed by Technical Team MagArete</a>
+            	</div>
+         	</div>
+        </footer>
+        </section>
+			<script src="js/classie.js"></script>
+		<script src="js/pathLoader.js"></script>
+		<script src="js/main.js"></script>
+		
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(){
+		$('.scrollspy').scrollSpy();
+		$('.carousel.carousel-slider').carousel({full_width: true});
+      	$(".button-collapse").sideNav();
+      	 $('.parallax').parallax();
+      	 $('.modal-trigger').leanModal();
+      	  
+      });
+      
+      </script>
+    </body>
+  </html>

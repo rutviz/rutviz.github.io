@@ -1,0 +1,11 @@
+.ripple{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	background-color: #FFF;
+	border-radius: 50%;
+	transition: transform 700ms linear;
+}
+.ripple.expanded {
+  transform: scale(50);
+}
