@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShareMe</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+ <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo">Shareme</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+
+   <div class="row container ">
+    <div class="col s12" style="margin-top:5%;padding: 2%">
+      <div class="row">
+        <div class="input-field col s8">
+          <input placeholder="www.aaa.com" id="first_name"  class="link"  type="text" class="validate" >
+          <label for="first_name">Enter Link</label>
+        </div>
+        <div class="input-field col s2">
+        	<button class="waves-effect waves-light btn" id="sendit"><i class="material-icons right">send</i>Post</button>
+        </div>
+      </div>
+	</div>
+	</div>
+
+	<div class="container">
+		<div class="row " id="names">
+					<!-- <h1>Names <button id="refresh"><i class="fa fa-refresh" style="font-size:24px"></i></button></h1> -->
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+<script type="text/javascript">
+	var link = $(".link").val();
+	$("#sendit").click(function(){
+		var link = $(".link").val();
+		if(/['www.']*[A-za-z]['.']/.test(link))
+		{
+			$(".link").val("");
+			writeUserData(101,link);
+			read_data();
+		}	
+		else
+		{
+			 M.toast({html: 'Please enter the correct link'})
+		}
+	});
+	$("#sendit").click(function(){
+		read_data();
+	});
+	read_data();
+	function read_data() {
+		firebase.database().ref('users/101').on('value', function(snapshot) {
+			$("#names").html("");
+		    snapshot.forEach(function(childSnapshot) {
+		      var childData = childSnapshot.child('username').val();
+		      // alert(childData);
+				
+		      $("#names").prepend("<div class=\"col s1 blue-grey lighten-5 card1\" ><a href=\"http://"+childData+"\" target=\"_blank\">"+childData+"</a></div>");
+		    });
+		});
+	}
+</script>
+</body>
+</html>
