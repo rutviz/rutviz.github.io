@@ -56,6 +56,12 @@ p.lead {
     width: 70%;
 }
 
+@media screen and (max-width: 1020px) {
+   p.lead {
+      width: 100%;
+   }   
+}
+
 .subheading {
     text-transform: uppercase;
     font-weight: 500;
