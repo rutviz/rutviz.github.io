@@ -1,88 +1,415 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Rutviz Vyas</title>
-	 <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-	   <link rel="stylesheet" type="text/css" href="css/index.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"></style>
+<html lang="en">
 
+  <head>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>	
-<body>
-	  
-   	 <div class="row " >
-	      <div class="col s12 m4 l3 blakish center-align full_height z-depth-3">
-	          <div class="row valign-wrapper" style="height: 30%;padding: 10%">
-	          	<div class="col s6 offset-s3 m6 offset-m3">
-		              <!-- <a id="menu" class="btn-floating btn-large pink pulse"> --><img src="images/me.jpg" alt=""  class="circle responsive-img"><!-- </a> -->
-	          	</div>
-	          </div>
-	          <div class="row" style="height: 50%">
-				  <a href="#about1"><div class="section about" onclick="change_content('about')">
-				    <h6 >About</h6></a>
-				  </div>
-				  <a href="#work"><div class="section work" onclick="change_content('work')">
-				    <h6>Work</h6></div></a>
-				  <a href="#labs"><div class="section labs" onclick="change_content('labs')">
-				    <h6>Labs</h6></a>
-				  </div>
-				 <a href="#contact" onclick="change_content('contact')"> <div class="section contact" >
-				    <h6>Contact</h6></a>
-				  </div>
-	          </div>
-	      </div>
-      <div id="" class="col s12 m8 l9 body_bg full_height section scrollspy" style="padding: 5%">
-      	<div id="about1" class="about_div section scrollspy " >
-      		<div style="border-bottom: 2px solid #db3784;display: inline-block;"><h5>About</h5></div>
-      		<div><h3>Rutviz Vyas<span style="color:#ff4ba8;font-size:  100px">.</span></h3></div>
-      		<div><h5 style="color:#ff4ba8;">FreeLence Full Stack Developer</h5></div>
-      		<div><h5 style="color:#888;font-weight: 200;max-width: 400px">Currently curating design for new startups and founders. Also love to code in <span style="font-color:#336699">Java</span> and <span style="font-color:#336699">PHP</span></h5></div>
-      		<div><button></button></div>
-      	</div>
-      	<div id="work" class="work_div animated hide section scrollspy">
-      		<div style="border-bottom: 2px solid #db3784;display: inline-block;"><h5>Work</h5></div>
-      		<div><h3>Rutviz Vyas<span style="color:#ff4ba8;font-size:  100px">.</span></h3></div>
-      		<div><h5 style="color:#ff4ba8;">FreeLence Full Stack Developer</h5></div>
-      		<div><h5 style="color:#888;font-weight: 200;max-width: 400px">Currently curating design for new startups and founders. Also love to code in <span style="font-color:#336699">Java</span> and <span style="font-color:#336699">PHP</span></h5></div>
-      		<div><button></button></div>
-      	</div>
-      	<div id="labs" class="labs_div animated hide section scrollspy">
-      		<div style="border-bottom: 2px solid #db3784;display: inline-block;"><h5>Labs</h5></div>
-      		<div><h3>Rutviz Vyas<span style="color:#ff4ba8;font-size:  100px">.</span></h3></div>
-      		<div><h5 style="color:#ff4ba8;">FreeLence Full Stack Developer</h5></div>
-      		<div><h5 style="color:#888;font-weight: 200;max-width: 400px">Currently curating design for new startups and founders. Also love to code in <span style="font-color:#336699">Java</span> and <span style="font-color:#336699">PHP</span></h5></div>
-      		<div><button></button></div>
-      	</div>
-      	<div id="contact" class="contact_div animated hide section scrollspy">
-      		<div style="border-bottom: 2px solid #db3784;display: inline-block;"><h5>Contact</h5></div>
-      		<div><h3>Rutviz Vyas<span style="color:#ff4ba8;font-size:  100px">.</span></h3></div>
-      		<div><h5 style="color:#ff4ba8;">FreeLence Full Stack Developer</h5></div>
-      		<div><h5 style="color:#888;font-weight: 200;max-width: 400px">Currently curating design for new startups and founders. Also love to code in <span style="font-color:#336699">Java</span> and <span style="font-color:#336699">PHP</span></h5></div>
-      		<div><button></button></div>
-      	</div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><Rutviz Vyas></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+          <!-- <a target="_blank"href="https://rutviz.github.io/shareme/" target="_blank" class="d-none d-lg-block"><i style="background-color: #5c85d6;border-radius: 0rem;font-size: 1.5rem;padding: 0.5rem;color: #FFFFFF;margin-top:5%;" class="fas fa-share">ShareMe</i></a> -->
+
+      <a target="_blank"class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Rutviz Vyas</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank"class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+        </ul>
       </div>
-    </div> 
-    
+    </nav>
 
-    <!-- <div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-      <h5>Title</h5>
-      <p>A bunch of text</p>
+     <!--  <div class="fixed-top" style="height: 3rem;background-color: #3366cc !important;margin-left:30%;margin-right: 30%;box-shadow:solid black 1px 1px 5px 5px">...</div>
+ -->
+
+    <div class="container-fluid p-0">
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Rutviz
+            <span class="text-primary">Vyas</span>
+          </h1>
+          <div class="subheading mb-5">5050 East Garford Street · Long Beach, CA 90815 · (562) 391-5489 ·
+            <a target="_blank"href="mailto:name@email.com">rutviz.vyas@student.csulb.edu</a>
+          </div>
+          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+          <div class="social-icons">
+            <a target="_blank"href="https://www.linkedin.com/in/rutvizvyas">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank"href="https://github.com/rutviz">
+              <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank"href="https://twitter.com/rutzvyas">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank"href="https://www.facebook.com/rutviz.vyas">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 214"><title>By Chintan Studio</title><path class="cls-1" d="M136.94,111.61A59.78,59.78,0,0,0,156.3,67c-.31-33.06-27.92-59.38-61-59.38h-75c-8.94,0-16.6,7-16.77,15.93A16.23,16.23,0,0,0,19.75,40h76c15.1,0,27.86,11.9,28.12,27a27.32,27.32,0,0,1-6.33,18A15.93,15.93,0,0,1,94,86l-.18-.18C87.5,79.44,77.14,79,70.71,85.16a16.23,16.23,0,0,0-.22,23.17l93.27,93.27a16.23,16.23,0,0,0,23,0c6.32-6.31,6-17-.34-23.3l-49.68-49.68A11.81,11.81,0,0,1,136.94,111.61Z"/><path class="cls-1" d="M367.19,20.18a16.23,16.23,0,0,0-22.76,3L246.14,150.83a16.28,16.28,0,0,1-24.41,1.58l-42.47-42.47a16.23,16.23,0,0,0-23.17.22c-6.2,6.43-5.72,16.8.6,23.12l67.17,67.17a16.22,16.22,0,0,0,25.38-.41L370.15,42.95A16.23,16.23,0,0,0,367.19,20.18Z"/><path class="cls-1" d="M43.77,206.36h-24a16.23,16.23,0,0,1,0-32.46h24a16.23,16.23,0,0,1,0,32.46Z"/></svg> -->
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Intern</h3>
+              <div class="subheading mb-3">Indian Text to Speech</div>
+              <p>Learned basic machine learning algorithm and retrained several models for image classification. 
+              Learned how to collect effective data to get a proper output.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2017 - September 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Developer</h3>
+              <div class="subheading mb-3">Parul University</div>
+              <p>Technical Festival 2017 of Parul university organized every year, I developed a dynamic website through which students can register and pay for the events they want to participate in.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 - March 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Designer</h3>
+              <div class="subheading mb-3">Parul University</div>
+              <p>Designed a website called e-magazine for the Computer Science Department to share the articles with the students.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2016 - December 2016</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">California State University Long Beach</h3>
+              <div class="subheading mb-3">Master of Science &middot; Computer Science</div>
+              <div>Computer Science</div>
+              <p>GPA: 3.33(Semester 1)</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2018 - May 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row ">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Gujarat Technical University</h3>
+              <div class="subheading mb-3">Bachelor of Engineering &middot; Computer Engineering</div>
+              <p>CGPA: 8.89(Out of 10)</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2014 - May 2018</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Classify</h3>
+              <div class="subheading mb-3">Machine Learning &middot; Tensorflow &middot; Android &middot; Java
+                <div class="social-icons">
+                  <a target="_blank"href="https://github.com/rutviz/Classify"><i class="fab fa-github"></i></a>
+                  <a target="_blank"class="disabled"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div class="font-weight-bold">Image Classification based on content of image</div>
+              <p class="text-justify">Android application to classify images based on the content of image using deep learning and to train model with real-time classes. The android application is offline and doesn't require any internet connection. Used Tensorflow Lite for Android devices.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2017 - May 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">TalkNTrace</h3>
+              <div class="subheading mb-3">Java &middot; Firebase &middot; Android
+                <div class="social-icons">
+                  <a target="_blank"class="disabled"><i class="fab fa-github"></i></a>
+                  <a target="_blank"class="disabled"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Location embedded chatting with innovative features.</div>
+              <p class="text-justify">Android application focused on location while chatting and group data sharing.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2014 - May 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Tripster</h3>
+              <div class="subheading mb-3">Java &middot; Map Api &middot; Android
+                <div class="social-icons">
+                  <a target="_blank"href="https://github.com/rutviz/Urbanites"><i class="fab fa-github"></i></a>
+                  <a target="_blank"class="disabled" disabled><i class="fas fa-link" ></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Real-time tracking of public transport services.</div>
+              <p class="text-justify">Android app having real time tracking of public transport services and provide route planning services.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2014 - May 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Home Automation</h3>
+              <div class="subheading mb-3">Java &middot; Arduino &middot; Android
+                <div class="social-icons">
+                  <a target="_blank"class="disabled"><i class="fab fa-github"></i></a>
+                  <a target="_blank"class="disabled"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Bluetooth based automation system to control Appliances.</div>
+              <p class="text-justify">Android application connected with Bluetooth and Arduino to control the devices and also provide the automation to control devices automatically.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2016 - April 2017</span>
+            </div>
+          </div>
+
+           <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Projections 17</h3>
+              <div class="subheading mb-3">HTML &middot; CSS &middot; JavaScript &middot; PHP &middot; Firebase
+                <div class="social-icons">
+                  <a target="_blank"href="https://github.com/rutviz/Projections-17"><i class="fab fa-github"></i></a>
+                  <a target="_blank"class="disabled"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Website for Technical Festival.</div>
+              <p class="text-justify">Website for technical festival of the university and implemented payment gateway for registration in the event.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 - March 2017</span>
+            </div>
+          </div>
+
+           <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Share Me</h3>
+              <div class="subheading mb-3">HTML &middot; JavaScript &middot; Firebase
+                <div class="social-icons">
+                  <a target="_blank"href="https://github.com/rutviz/ShareMe"><i class="fab fa-github"></i></a>
+                  <a target="_blank"href="https://rutviz.github.io/shareme/"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Anonymous link sharing site</div>
+              <p class="text-justify">Website designed to share links without any use authentication through differnt devices.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019 - January 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Magarete</h3>
+              <div class="subheading mb-3">HTML &middot; JavaScript &middot; MaterializeCSS
+                <div class="social-icons">
+                  <a target="_blank"href="https://github.com/rutviz/MagArete"><i class="fab fa-github"></i></a>
+                  <a target="_blank"href="https://rutviz.github.io/Magarete/"><i class="fas fa-link"></i></a>
+                </div>
+              </div>
+              <div  class="font-weight-bold">Online Magazine platform to support new Writers</div>
+              <p class="text-justify">An e- Magazine developed for the showcase of the articles written by the students and staff of computer science department, Parul University.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2017 - December 2017</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-python"></i>
+            </li>
+             <li class="list-inline-item">
+              <i class="fab fa-android"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-java"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-php"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Android App development
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Tensorflow and Machine Learning Algorithms
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a developer, I enjoy most of my time hanging out with my friends. I love to play badminton. And as I am in Long Beach, I enjoy spending time in exploring new places.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the Machine Learning.</p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - Parul University - Annual Technical Festival 2018</li>
+            <!-- <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Outstanding Achievement at Defence Department - Certificate of Achievement</li> -->
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - Parul University - Moz Hack 2017</li>
+            <li>
+              <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              5<sup>th</sup>
+              Smart India Hackathon - <b>National Level Hackathon 2017</b></li>
+          </ul>
+        </div>
+      </section>
+
     </div>
-  </div> -->
 
-    <script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
-	<!--JavaScript at end of body for optimized loading-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-     <script type="text/javascript" src="js/index.js">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-     </script>
-</body>
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
 </html>
