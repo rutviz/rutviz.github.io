@@ -18,4 +18,7 @@
     background-color: lightgray !important;
     cursor: auto !important;
 }
+.justify{
+    text-align: justify;
+}
     /*svg{fill:#495057!important;width: 3.5rem;float: right;}*/svg:hover{fill:#3366cc!important;}}
