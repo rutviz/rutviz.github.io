@@ -52,8 +52,32 @@
     });
   });
 
+
+  function postLink(){
+    var link = $(".link").val();
+    if(/['www.']*[A-za-z]['.']/.test(link))
+    {
+      $(".link").val("");
+      writeUserData(101,link);
+    }	
+    else
+    {
+        M.toast({html: 'Please enter the correct link'})
+    }
+  }
+
   function writeUserData(userId, name) {
-  firebase.database().ref('users/' + userId).push({
-    username: name
+    firebase.database().ref('users/' + userId).push({
+      username: name
+    });
+  }
+
+  $("#sendit").click(function(){
+		postLink();
+	});
+
+  $("#link").keyup(function(e){
+    if (e.key === 'Enter' || e.keyCode === 13){
+      postLink();
+    }
   });
-}

@@ -63,24 +63,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 <script type="text/javascript" src="index.js"></script>
-
-<script type="text/javascript">
-
-	var link = $(".link").val();
-	$("#sendit").click(function(){
-		var link = $(".link").val();
-		if(/['www.']*[A-za-z]['.']/.test(link))
-		{
-			$(".link").val("");
-			writeUserData(101,link);
-			read_data();
-		}	
-		else
-		{
-			 M.toast({html: 'Please enter the correct link'})
-		}
-	});
-	
-</script>
 </body>
 </html>
